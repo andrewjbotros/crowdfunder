@@ -1,7 +1,4 @@
 Crowdfunder::Application.routes.draw do
-  get "session/new"
-  get "session/create"
-  get "session/destroy"
   resources :projects
   resources :users, :only => [:new, :create]
   resources :sessions, :only => [:new, :create, :destroy]

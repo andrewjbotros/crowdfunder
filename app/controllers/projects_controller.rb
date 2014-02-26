@@ -39,5 +39,5 @@ end
 
   private
   def project_params
-  	params.require(:product).permit(:title, :description, :funding_period, :goal)
+  	params.require(:project).permit(:title, :description, :goal, :start_date, :end_date)
 end

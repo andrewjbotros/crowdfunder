@@ -1,8 +1,10 @@
 Crowdfunder::Application.routes.draw do
-  get "users/new"
-  get "users/create"
+  get "session/new"
+  get "session/create"
+  get "session/destroy"
   resources :projects
   resources :users, :only => [:new, :create]
+  resources :sessions, :only => [:new, :create, :destroy]
   root to: "projects#index"
 
   # The priority is based upon order of creation: first created -> highest priority.

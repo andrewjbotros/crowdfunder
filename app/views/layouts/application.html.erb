@@ -8,6 +8,25 @@
 </head>
 <body>
 
+<% if current_user %>
+		Logged in as <%= current_user.email %>
+		<%= link_to "Log out", session_path("current"), :method => :delete %>
+<% else %>
+		<%= link_to "Sign up", new_user_path %> or
+		<%= link_to "Log in", new_session_path %>
+<% end %>
+
+<div id="flash">
+	<% if flash[:notice] %>
+		<p id="notice"><%= flash[:notice] %></p>
+<% end %>
+
+	<% if flash[:alert] %>
+		<p id="alert"><%= flash[:alert] %></p>
+<% end %>
+
+</div>
+
 <%= yield %>
 
 </body>

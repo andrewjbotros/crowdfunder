@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  funding_period: 2014-02-25 14:15:57
+  goal: 1
+
+two:
+  title: MyString
+  description: MyText
+  funding_period: 2014-02-25 14:15:57
+  goal: 1

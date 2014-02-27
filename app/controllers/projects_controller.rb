@@ -28,7 +28,6 @@ class ProjectsController < ApplicationController
   	end
   end
 
-end
   def update
   	@project = Project.find(params[:id])
 
@@ -42,4 +41,6 @@ end
   private
   def project_params
   	params.require(:project).permit(:title, :description, :goal, :start_date, :end_date, :picture_url)
+  end
+
 end

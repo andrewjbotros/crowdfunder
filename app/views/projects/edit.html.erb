@@ -1,2 +1,36 @@
-<h1>Projects#edit</h1>
-<p>Find me in app/views/projects/edit.html.erb</p>
+<h1>Edit Project Details</h1>
+
+<p>
+	<%= link_to "Back", @project %>
+</p>
+
+<%= form_for @project do |f| %>
+	<p>
+		<%= f.label "title" %><br>
+		<%= f.text_field "title" %>
+	</p>
+	<p>
+		<%= f.label "description" %><br>
+		<%= f.text_field "description" %>
+	</p>
+	<p>
+		<%= f.label "goal" %><br>
+		<%= f.text_field "goal" %>
+	</p>
+	<p>
+		<%= f.label "start_date" %><br>
+		<%= f.text_field "start_date" %>
+	</p>
+	<p>
+		<%= f.label "end_date" %><br>
+		<%= f.text_field "end_date" %>
+	</p>
+	<p>
+		<%= f.label "picture_url" %><br>
+		<%= f.text_field "picture_url" %>
+	</p>
+	<p>
+		<%= submit_tag "Save"  %>
+	</p>
+
+	<% end %>

@@ -1,3 +1,6 @@
+<%= @project[:title] %>
 <%= render @project %>
+<br>
+<br>
+<%= link_to "Edit Project", edit_project_path(@project) %> | <%= link_to 'Back', root_url %>
 
-<%= link_to "Edit Project", edit_project_path(@project) %>

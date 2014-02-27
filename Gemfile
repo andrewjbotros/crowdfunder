@@ -46,4 +46,5 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 
 gem 'sorcery'
 
+gem 'bootstrap-sass', '2.3.2.0'
 
